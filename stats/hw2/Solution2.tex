@@ -71,10 +71,17 @@ Let's calculate efficiency relative to the Epanechnikov kernel
 	\item For $K_2(x)$ it's $\dfrac{J(K_{ep})}{J(K_2)} \cdot 100\% = 95.1\%.$
 \end{itemize}
 \subsection{Numerical solution}
-The next picture shows us the water rate distribution using Sturges estimator
+The next picture shows us the water rate distribution using Sturges estimator.
 \includegraphics[width=\textwidth]{Images/Task1_1.png}
 
-To show the bias-variance trade off you should  visit the next \href{https://github.com/vitomania/ozon/blob/master/stats/hw2/Images}{link} and download file named \texttt{Task1\_2.gif} which is represented GIF-animation.
+To show the bias-variance trade off you should  visit the next \href{https://github.com/vitomania/ozon/blob/master/stats/hw2/Images\\
+/Task1_2.gif}{link}.
+
+The next picture shows the different kernel estimators\\
+\includegraphics[width=\textwidth]{Images/Task1_3.png}
+Now we are going to choose the best exponential density estimator w.r.t. bandwidth. \\
+\includegraphics[width=\textwidth]{Images/Task1_4.png}
+We can see that the optimal bandwidth $\approx 1.$
 
 
 \section{Task 2}
@@ -121,7 +128,7 @@ The following picture shows the histogram of the actual mixture \eqref{eq2_1} us
 \includegraphics[width=\textwidth]{Images/Task2_1.png}
 The following picture shows quality of different bin edge estimators \\
 \includegraphics[width=\textwidth, height=9.5cm]{Images/Task2_2.png}\\
-We can see that \textbf{Cross validation estimator (leave one out) a.k.a "stone"} gives us the best quality in sense of MISE. Use this \href{https://numpy.org/devdocs/reference/generated/numpy.histogram_bin_edges.html}{article} to get an acquaintance with other methods.
+We can see that \textbf{Cross validation estimator (leave-one-out) a.k.a "stone"} gives us the best quality in sense of MISE. Use this \href{https://numpy.org/devdocs/reference/generated/numpy.histogram_bin_edges.html}{article} to get an acquaintance with other methods.
 
 The following picture shows the optimal bandwidth \\
 \includegraphics[width=\textwidth]{Images/Task2_3.png}
@@ -183,8 +190,11 @@ The KKT theorem gives us the solution
 $$
 \hat{\pi}_k = \dfrac{1}{n} \sum \limits_{i=1}^n \gamma_k(Y_i).
 $$
+\subsection{Numerical solution}
+Generate $X_1, \ldots, X_n \sim p_{BS}(x)$ and plot histogram using Freedman Diaconis rule. 
+\includegraphics[width=\textwidth]{Images/Task3_1.png}
  
-\section{Task 5}
+\section{Task 4}
 To show that the minimum of the functional
 $$
 J(K) = \left( \int \limits_{- \infty}^{+\infty} K^2(x)dx \right)^{4/5} \cdot \left( \int \limits_{- \infty}^{+\infty} x^2 K(x)dx \right)^{2/5} \rightarrow \min \limits_{K \in \mathcal{C}}
