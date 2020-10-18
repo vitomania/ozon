@@ -127,23 +127,26 @@ Consider the next functional
 $$
 AMISE(K) = \dfrac{1}{nh} \int \limits_{-\infty}^{+\infty} K^2(x) dx + \dfrac{h^4}{4} \int \limits_{-\infty}^{+\infty} (f^{\prime \prime}(x))^2 dx \cdot \left(\int \limits_{-\infty}^{+\infty} x^2 K(x) dx \right)^2 \rightarrow \min \limits_{h > 0}
 $$  
-which is supposed to be minimized in $h.$ If $K(x)$ is the Gaussian kernel then 
+which is supposed to be minimized in $h.$ If $K(x)$ is the standard Gaussian kernel then 
 $$
-\int \limits_{-\infty}^{+\infty} K^2(x) dx = \dfrac{1}{\sqrt{2}},
+\int \limits_{-\infty}^{+\infty} K^2(x) dx = \dfrac{1}{2\sqrt{\pi}},
 $$
 $$
-\int \limits_{-\infty}^{+\infty} x^2 K(x) dx = 1.
+\int \limits_{-\infty}^{+\infty} x^2 K(x) dx = 1,
+$$
+$$
+ \int \limits_{-\infty}^{+\infty} (f^{\prime \prime}(x))^2 dx = \dfrac{3}{8 \sqrt{\pi} \sigma^5}.
 $$
 Using the necessary condition of extremum we obtain
 $$
-h^* = \dfrac{1}{\left( n \sqrt{2} \int \limits_{-\infty}^{+\infty} (f^{\prime \prime}(x))^2 dx \right)^{1/5}} > 0.
+h^* = \left( \dfrac{4 \sigma^5}{3n} \right)^{1/5}> 0.
 $$
 When bias equals to variance?
 $$
-\dfrac{1}{\sqrt{2}nh} = \dfrac{h^4}{4} \int \limits_{-\infty}^{+\infty} (f^{\prime \prime}(x))^2 dx
+\dfrac{1}{2\sqrt{\pi}nh} = \dfrac{h^4}{4} \dfrac{3}{8 \sqrt{\pi} \sigma^5} 
 $$
 $$
-(h^*)^5 = \dfrac{(h^*)^5}{4} \Rightarrow bias \neq variance.
+1 \neq \dfrac{1}{4} \Rightarrow bias \neq variance.
 $$
 
 
@@ -201,7 +204,7 @@ $$
 \hat{\mu}_k = \dfrac{\sum \limits_{i=1}^n \gamma_k(Y_i) x_i}{\sum \limits_{i=1}^n \gamma_k(Y_i)},
 $$
 $$
-\hat{\sigma}_k^2 = \dfrac{\sum \limits_{i=1}^n \gamma_k(Y_i) (x_i - \mu_k)^2}{\sum \limits_{i=1}^n \gamma_k(Y_i)}.
+\hat{\sigma}_k^2 = \dfrac{\sum \limits_{i=1}^n \gamma_k(Y_i) (x_i - \hat{\mu}_k)^2}{\sum \limits_{i=1}^n \gamma_k(Y_i)}.
 $$
 To find $\pi_k$ we need to consider the next problem
 $$

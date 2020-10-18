@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.6)  19 OCT 2020 01:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.6)  19 OCT 2020 01:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -818,15 +818,15 @@ Overfull \hbox (38.42273pt too wide) detected at line 121
 <Images/Task2_1.png, id=114, 867.24pt x 505.89pt>
 File: Images/Task2_1.png Graphic file (type png)
 <use Images/Task2_1.png>
-Package pdftex.def Info: Images/Task2_1.png  used on input line 152.
+Package pdftex.def Info: Images/Task2_1.png  used on input line 155.
 (pdftex.def)             Requested size: 418.25368pt x 243.98232pt.
 <Images/Task2_2.png, id=115, 1445.4pt x 1084.05pt>
 File: Images/Task2_2.png Graphic file (type png)
 <use Images/Task2_2.png>
-Package pdftex.def Info: Images/Task2_2.png  used on input line 154.
+Package pdftex.def Info: Images/Task2_2.png  used on input line 157.
 (pdftex.def)             Requested size: 418.251pt x 270.30055pt.
 
-Overfull \hbox (5.49054pt too wide) in paragraph at lines 151--156
+Overfull \hbox (5.49054pt too wide) in paragraph at lines 154--159
 \OT1/cmr/m/n/12 The fol-low-ing pic-ture shows the his-togram of the ac-tual mi
 x-ture [] us-ing Freedman-
  []
@@ -835,15 +835,15 @@ x-ture [] us-ing Freedman-
 <Images/Task2_3.png, id=123, 867.24pt x 505.89pt>
 File: Images/Task2_3.png Graphic file (type png)
 <use Images/Task2_3.png>
-Package pdftex.def Info: Images/Task2_3.png  used on input line 158.
+Package pdftex.def Info: Images/Task2_3.png  used on input line 161.
 (pdftex.def)             Requested size: 418.25368pt x 243.98232pt.
 <Images/Task2_4.png, id=124, 867.24pt x 505.89pt>
 File: Images/Task2_4.png Graphic file (type png)
 <use Images/Task2_4.png>
-Package pdftex.def Info: Images/Task2_4.png  used on input line 160.
+Package pdftex.def Info: Images/Task2_4.png  used on input line 163.
 (pdftex.def)             Requested size: 418.25368pt x 243.98232pt.
  [7 <./Images/Task2_2.png> <./Images/Task2_3.png>]
-Overfull \hbox (1.09978pt too wide) detected at line 184
+Overfull \hbox (1.09978pt too wide) detected at line 187
 \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; [] ; x[]\OT1/cmr/m/n/1
 2 ) = [] [] \OML/cmm/m/it/12 ^^Y[]p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cm
 r/m/n/12 ; \OML/cmm/m/it/12 ^^V[]; ^^[[]\OT1/cmr/m/n/12 ) = [] [] \OML/cmm/m/it
@@ -855,26 +855,26 @@ r/m/n/12 ; \OML/cmm/m/it/12 ^^V[]; ^^[[]\OT1/cmr/m/n/12 ) = [] [] \OML/cmm/m/it
 <Images/Task3_1.png, id=136, 867.24pt x 505.89pt>
 File: Images/Task3_1.png Graphic file (type png)
 <use Images/Task3_1.png>
-Package pdftex.def Info: Images/Task3_1.png  used on input line 219.
+Package pdftex.def Info: Images/Task3_1.png  used on input line 222.
 (pdftex.def)             Requested size: 418.25368pt x 243.98232pt.
  [9]
 <Images/Task3_3.png, id=142, 4958.525pt x 2107.875pt>
 File: Images/Task3_3.png Graphic file (type png)
 <use Images/Task3_3.png>
-Package pdftex.def Info: Images/Task3_3.png  used on input line 223.
+Package pdftex.def Info: Images/Task3_3.png  used on input line 226.
 (pdftex.def)             Requested size: 418.25368pt x 177.80005pt.
 <Images/Task3_4.png, id=143, 1193.45876pt x 473.77pt>
 File: Images/Task3_4.png Graphic file (type png)
 <use Images/Task3_4.png>
-Package pdftex.def Info: Images/Task3_4.png  used on input line 229.
+Package pdftex.def Info: Images/Task3_4.png  used on input line 232.
 (pdftex.def)             Requested size: 418.25368pt x 166.03163pt.
  [10 <./Images/Task3_1.png> <./Images/Task3_3.png>]
-Overfull \hbox (36.84047pt too wide) detected at line 262
+Overfull \hbox (36.84047pt too wide) detected at line 265
 \OML/cmm/m/it/12 g[]\OT1/cmr/m/n/12 (0) = [] [][] [] [][] +
  []
 
 [11 <./Images/Task3_4.png>]
-Overfull \hbox (39.32745pt too wide) detected at line 293
+Overfull \hbox (39.32745pt too wide) detected at line 296
 \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cm
 r/m/n/12 ) [] + \OML/cmm/m/it/12 x[] [] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 5 
 [] [] = 0\OML/cmm/m/it/12 :
@@ -887,15 +887,15 @@ Package movie15 Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 (movie15)                @@ superseded by `media9'.           @@
 (movie15)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
 [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
  (./Solution2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 315.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
 Package rerunfilecheck Info: File `Solution2.out' has not changed.
 (rerunfilecheck)             Checksum: 1F8B61F74037DD6F8EB2408854BE96FB;647.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 315.
  ) 
 Here is how much of TeX's memory you used:
  7807 strings out of 492982
@@ -919,7 +919,7 @@ sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Solution2.pdf (14 pages, 3040561 bytes).
+Output written on Solution2.pdf (14 pages, 3040546 bytes).
 PDF statistics:
  224 PDF objects out of 1000 (max. 8388607)
  171 compressed objects within 2 object streams
