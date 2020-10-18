@@ -193,6 +193,18 @@ $$
 \subsection{Numerical solution}
 Generate $X_1, \ldots, X_n \sim p_{BS}(x)$ and plot histogram using Freedman Diaconis rule. 
 \includegraphics[width=\textwidth]{Images/Task3_1.png}
+To demonstrate how EM-algorithm is fitted w.r.t. different number of components visit this \href{https://github.com/vitomania/ozon/blob/master/stats/hw2/Images/Task3_2.gif}{link}.
+
+To choose optimal \texttt{bandwidth} Cross Validation with maximize likelihood is used.\\ 
+\includegraphics[width=\textwidth]{Images/Task3_3.png}
+
+To determinate number of components for EM-algorithm the Epanechnikov KDE was chosen. We are going to minimize the next functional
+$$
+\dfrac{1}{J} \sum \limits_{i=1}^J (\hat{p}_n^{EM}(x_i) - \hat{p}_n^{K}(x_i))^2 \rightarrow \min \limits_{n\_components}.
+$$
+\includegraphics[width=\textwidth]{Images/Task3_4.png}
+
+
  
 \section{Task 4}
 To show that the minimum of the functional
