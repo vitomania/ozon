@@ -74,8 +74,7 @@ Let's calculate efficiency relative to the Epanechnikov kernel
 The next picture shows us the water rate distribution using Sturges estimator.
 \includegraphics[width=\textwidth]{Images/Task1_1.png}
 
-To show the bias-variance trade off you should  visit the next \href{https://github.com/vitomania/ozon/blob/master/stats/hw2/Images\\
-/Task1_2.gif}{link}.
+To show the bias-variance trade off you should  visit the next \href{https://github.com/vitomania/ozon/blob/master/stats/hw2/Images/Task1_2.gif}{link}.
 
 The next picture shows the different kernel estimators\\
 \includegraphics[width=\textwidth]{Images/Task1_3.png}
@@ -85,7 +84,7 @@ We can see that the optimal bandwidth $\approx 1.$
 
 
 \section{Task 2}
-\subsection{Theoretical solution}
+\subsection{Theoretical solution 1}
 Suppose we have random variable $X$ drawn from distribution with the density function 
 \begin{equation}
 \label{eq2_1}
@@ -103,7 +102,7 @@ $$
 = \int \limits_{- \infty}^{+\infty} x^2 p(x) dx = \dfrac{1}{2} \dfrac{1}{\sqrt{2 \pi}} \int \limits_{-\infty}^{+\infty} x^2e^{-\frac{1}{2}x^2} dx + \dfrac{1}{4} \int \limits_{-2}^{+\infty} x^2e^{-(x+2)} dx + \dfrac{1}{4} \int \limits_{-\infty}^{2} x^2e^{-(-x+2)} dx =
 $$
 $$
-= \dfrac{1}{2} + 1 + 1 = \dfrac{5}{2}.
+= \dfrac{1}{2} + \dfrac{1}{2} + \dfrac{1}{2} = \dfrac{3}{2}.
 $$
 \paragraph{Characteristic function.}
 According to the definition of characteristic function
@@ -114,15 +113,40 @@ $$
 = \int \limits_{- \infty}^{+\infty} e^{itx} p(x) dx = \dfrac{1}{2} \dfrac{1}{\sqrt{2 \pi}} \int \limits_{-\infty}^{+\infty} e^{itx} e^{-\frac{1}{2}x^2} dx + \dfrac{1}{4} \int \limits_{-2}^{+\infty} e^{itx} e^{-(x+2)} dx + \dfrac{1}{4} \int \limits_{-\infty}^{2} e^{itx} e^{-(-x+2)} dx = 
 $$
 $$
-= \dfrac{1}{2} e^{-\frac{1}{2}t^2} + \dfrac{1}{4} e^{-2} \left[ \int \limits_{-2}^{+\infty} \cos(tx) e^{-x}dx + i\int \limits_{-2}^{+\infty} \sin(tx) e^{-x}dx \right] - 
+= \dfrac{1}{2} e^{-\frac{1}{2}t^2} + \dfrac{1}{4} \left[ \int \limits_{-2}^{+\infty} \cos(tx) e^{-(x + 2)}dx + i\int \limits_{-2}^{+\infty} \sin(tx) e^{-(x + 2)}dx \right] +
 $$
 $$
-- \dfrac{1}{4} e^{-2} \left[ \int \limits_{-\infty}^{2} \cos(tx) e^{x}dx + i\int \limits_{-\infty}^{2} \sin(tx) e^{x}dx \right] = 
-\dfrac{1}{2} e^{-\frac{1}{2}t^2} + \dfrac{i}{2} e^{-2} \int \limits_{-2}^{+\infty} \sin(tx) e^{-x}dx =
++ \dfrac{1}{4} \left[ \int \limits_{-\infty}^{2} \cos(tx) e^{-(-x+2)}dx + i\int \limits_{-\infty}^{2} \sin(tx) e^{-(-x+2)}dx \right] = 
+\dfrac{1}{2} e^{-\frac{1}{2}t^2} + \dfrac{i}{2} \int \limits_{0}^{+\infty} \cos(t(y-2)) e^{-y}dy =
 $$
 $$
-= \dfrac{1}{2} e^{-\frac{1}{2}t^2} + \dfrac{i}{2} e^{-2} \dfrac{t}{t^2 + 1}
+= \dfrac{1}{2} e^{-\frac{1}{2}t^2} + \dfrac{1}{2}  \cdot \dfrac{\cos2t + t \sin2t}{t^2 + 1}.
 $$
+\subsection{Theoretical solution 2}
+Consider the next functional
+$$
+AMISE(K) = \dfrac{1}{nh} \int \limits_{-\infty}^{+\infty} K^2(x) dx + \dfrac{h^4}{4} \int \limits_{-\infty}^{+\infty} (f^{\prime \prime}(x))^2 dx \cdot \left(\int \limits_{-\infty}^{+\infty} x^2 K(x) dx \right)^2 \rightarrow \min \limits_{h > 0}
+$$  
+which is supposed to be minimized in $h.$ If $K(x)$ is the Gaussian kernel then 
+$$
+\int \limits_{-\infty}^{+\infty} K^2(x) dx = \dfrac{1}{\sqrt{2}},
+$$
+$$
+\int \limits_{-\infty}^{+\infty} x^2 K(x) dx = 1.
+$$
+Using the necessary condition of extremum we obtain
+$$
+h^* = \dfrac{1}{\left( n \sqrt{2} \int \limits_{-\infty}^{+\infty} (f^{\prime \prime}(x))^2 dx \right)^{1/5}} > 0.
+$$
+When bias equals to variance?
+$$
+\dfrac{1}{\sqrt{2}nh} = \dfrac{h^4}{4} \int \limits_{-\infty}^{+\infty} (f^{\prime \prime}(x))^2 dx
+$$
+$$
+(h^*)^5 = \dfrac{(h^*)^5}{4} \Rightarrow bias \neq variance.
+$$
+
+
 \subsection{Numerical solution}
 The following picture shows the histogram of the actual mixture \eqref{eq2_1} using Freedman-Diaconis rule with number of samples $n=100000$ \\
 \includegraphics[width=\textwidth]{Images/Task2_1.png}
