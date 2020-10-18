@@ -13,3 +13,4 @@
 \contentsline {subsection}{\numberline {3.1}Theoretical solution}{8}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Numerical solution}{10}{subsection.3.2}
 \contentsline {section}{\numberline {4}Task 4}{11}{section.4}
+\contentsline {section}{\numberline {5}Appendix}{13}{section.5}
