@@ -156,7 +156,7 @@ C(f) = \sum \limits_{i=1}^N Cost_i(f)
 $$
 where $N$ --- number of players.
 \begin{enumerate}
-	\item AAE example. Consider an atomic instance with two Nash flows that have different costs. Each player
+	\item AAE example. Consider an unweighted (all $r_i$ are equal) atomic instance with two Nash flows that have different costs. Each player
 has the same traffic rate, $r = 1,$ and the Price of Anarchy is 
 $$
 \dfrac{C(f_{Nash})}{C(f_{opt})} = \dfrac{3 + 3 + 2 + 2}{1 + 1 + 1 + 1} = \dfrac{5}{2},
@@ -168,6 +168,29 @@ $$
 \dfrac{C(f_{Nash})}{C(f_{opt})} = \dfrac{3 \cdot \dfrac{1 + \sqrt{5}}{2} + 3 \cdot \dfrac{1 + \sqrt{5}}{2} + 2 + 2}{2 \cdot \dfrac{1 + \sqrt{5}}{2} + 2 \cdot \dfrac{1 + \sqrt{5}}{2} + 1 + 1} = \dfrac{3 + \sqrt{5}}{2},
 $$ which
 is the highest possible Price of Anarchy for atomic instances with affine cost functions. 
+	\item Consider the next atomic instance $(G, r, c)$ with three players. Set $r_i = 1, \forall i \in \{1, 2, 3\}.$ 
+	
+The optimal strategies are for each player to move in a straight line. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Images/Task4_2.png}
+\caption{The optimal player's strategies.}
+\end{figure}
+At the Nash equilibrium each player moves according to his own color. The bold (non-dashed) means the path cost is $c(x) = x,$ the dashed line means the path cost is $c(x) = 0.$
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Images/Task4_2_1.png}
+\caption{Nash equilibrium. The bold (non-dashed) means the path cost is $c(x) = x,$ the dashed lines means the path cost is $c(x) = 0.$}
+\end{figure}
+We can calculate the Price of Anarchy as follows
+$$
+\dfrac{C(f_{Nash})}{C(f_{opt})} = \dfrac{5 + 5 + 5}{2 + 2 + 2} = \dfrac{5}{2}.
+$$
+\item There are no any ideas.
+\item At the lecture one theorem about the price of anarchy in affine weighted atomic instances was mentioned. 
+\begin{theorem}
+If $(G, r, c)$ is an atomic instance with affine cost functions, then the price of anarchy of $(G, r, c)$ is at most $\dfrac{3 + \sqrt{5}}{2} \approx 2.618.$
+\end{theorem}
 \end{enumerate}
 
 \section{Task 5}
@@ -210,7 +233,7 @@ Suppose that at least two of the $n$ players in the CYOP protocol have made dist
 \end{enumerate} 
 \end{proposition}
 \begin{proof}
-We prove this think by induction on $n.$ The induction base, $n= 2,$ is easy to see: If two players disagree by making distinct markings, we can assign them disjoint pieces of the cake that they have marked themselves, and a nonempty piece remains between the two markings. 
+We prove this think by induction on $n.$ The induction base, $n= 2,$ is easy to see: if two players disagree by making distinct markings, we can assign them disjoint pieces of the cake that they have marked themselves, and a nonempty piece remains between the two markings. 
 
 For the induction step assume the claim to be true for $n$ players. To show it for $n + 1$ players, suppose that $p_1, \ldots, p_{n+1}$ have made their markings according to the CYOP protocol. Cut at the leftmost marking and assign the piece left of the cut to the player who made this marking, where ties can be broken arbitrarily. Without loss of generality, assume that $p_1,$ gets this piece and drops out. Now, remove all markings of $p_1,$ and also the leftmost markings of all other players $p_i, i \neq 1.$ By induction hypothesis, all the players $p_2, \ldots p_{n+1}$  receive piece that they themselves have marked, and no two of these pieces overlap. 
 
@@ -223,7 +246,7 @@ To prove that a nonempty piece of the cake remains, consider the following two c
 	\item The leftmost markings of the players coincided. That is the disagreement of our original assumption for $n+1$ players concerned their other (not their leftmost) piece markings only. In that case, assign the first (the leftmost) piece not to $p_1,$  but, for instance,  to $p_2.$ We then are again in case (a).
 \end{enumerate}
 \end{enumerate}
-It is fairly may to see that the CYOP protocol is proportional and immune to manipulation for risk-averse players, i.e. envy-free protocol. All players are guaranteed to receive a proportional share. However, if a player try to cheat he is jeopardizing to receive a proportional share himself (but this does not have any impact on any other player's guaranteed proportional share). For example, a cheating player might place his marks such that some of his marked pieces is worth more than $\dfrac{1}{n},$ hoping to receive this particular piece. However, this also means, that at least one of his marked pieces is worth less than $\dfrac{1}{n}.$ Because the players cannot directly influence which piece they are going to get assigned (as this always also depends on he other player's markings. which are unknown), the cheating player may end up with even less than a proportional share.    
+It is fairly may to see that the CYOP protocol is proportional and immune to manipulation for risk-averse players, i.e. envy-free protocol. All players are guaranteed to receive a proportional share. However, if a player try to cheat he is jeopardizing to receive a proportional share himself (but this does not have any impact on any other player's guaranteed proportional share). For example, a cheating player might place his marks such that some of his marked pieces is worth more than $\dfrac{1}{n},$ hoping to receive this particular piece. However, this also means, that at least one of his marked pieces is worth less than $\dfrac{1}{n}.$ Because the players cannot directly influence which piece they are going to get assigned (as this always also depends on he other player's markings which are unknown), the cheating player may end up with even less than a proportional share.    
  
 \end{proof}
 \end{document} 
