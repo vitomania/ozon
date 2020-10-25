@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.6)  23 OCT 2020 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.6)  25 OCT 2020 20:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -736,108 +736,120 @@ been already used, duplicate ignored
                    \relax 
 l.47 \newpage
               [1]
-<Images/Task1.png, id=37, 1424.32124pt x 801.99625pt>
+<Images/Task1.png, id=42, 1424.32124pt x 801.99625pt>
 File: Images/Task1.png Graphic file (type png)
 <use Images/Task1.png>
 Package pdftex.def Info: Images/Task1.png  used on input line 50.
 (pdftex.def)             Requested size: 418.25368pt x 235.4977pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2 <./Images/Task1.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 101.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 120.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 101.
-<Images/Task3.png, id=49, 388.45125pt x 307.1475pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
+ [3]
+<Images/Task3.png, id=63, 388.45125pt x 307.1475pt>
 File: Images/Task3.png Graphic file (type png)
 <use Images/Task3.png>
-Package pdftex.def Info: Images/Task3.png  used on input line 141.
+Package pdftex.def Info: Images/Task3.png  used on input line 160.
 (pdftex.def)             Requested size: 418.25368pt x 330.72078pt.
- [3] [4pdfTeX warning (ext4): destination with the same identifier (name{figure
-.1}) has been already used, duplicate ignored
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.156 $$
-         <./Images/Task3.png>]
-<Images/Task4_2.png, id=64, 615.29875pt x 279.0425pt>
+l.167 
+       <./Images/Task3.png>]
+<Images/Task4_2_2.png, id=70, 628.3475pt x 234.8775pt>
+File: Images/Task4_2_2.png Graphic file (type png)
+<use Images/Task4_2_2.png>
+Package pdftex.def Info: Images/Task4_2_2.png  used on input line 193.
+(pdftex.def)             Requested size: 418.25368pt x 156.34209pt.
+ [5]
+<Images/Task4_2.png, id=77, 628.3475pt x 222.8325pt>
 File: Images/Task4_2.png Graphic file (type png)
 <use Images/Task4_2.png>
-Package pdftex.def Info: Images/Task4_2.png  used on input line 176.
-(pdftex.def)             Requested size: 418.25368pt x 189.68251pt.
- [5]
-<Images/Task4_2_1.png, id=71, 617.30624pt x 242.9075pt>
+Package pdftex.def Info: Images/Task4_2.png  used on input line 199.
+(pdftex.def)             Requested size: 418.25368pt x 148.32455pt.
+<Images/Task4_2_1.png, id=78, 628.3475pt x 232.87pt>
 File: Images/Task4_2_1.png Graphic file (type png)
 <use Images/Task4_2_1.png>
-Package pdftex.def Info: Images/Task4_2_1.png  used on input line 182.
-(pdftex.def)             Requested size: 418.25368pt x 164.58557pt.
+Package pdftex.def Info: Images/Task4_2_1.png  used on input line 205.
+(pdftex.def)             Requested size: 418.25368pt x 155.00583pt.
  [6pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.190 \item A
-             t the lecture one theorem about the price of anarchy in affine ...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
-s been already used, duplicate ignored
+l.208 W
+       e can calculate the Price of Anarchy as followspdfTeX warning (ext4): de
+stination with the same identifier (name{figure.3}) has been already used, dupl
+icate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.190 \item A
-             t the lecture one theorem about the price of anarchy in affine ...
- <./Images/Task4_2.png> <./Images/Task4_2_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+l.208 W
+       e can calculate the Price of Anarchy as follows <./Images/Task4_2_2.png>
+ <./Images/Task4_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 
  []
 
 
-Overfull \hbox (7.62529pt too wide) in paragraph at lines 197--227
+Overfull \hbox (7.62529pt too wide) in paragraph at lines 220--250
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--227
+Underfull \hbox (badness 10000) in paragraph at lines 220--250
 
  []
 
-[7] [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.250 \begin{proposition}
+                          <./Images/Task4_2_1.png>] [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
  [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
  (./hw1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 252.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
 Package rerunfilecheck Info: File `hw1.out' has not changed.
-(rerunfilecheck)             Checksum: E7DD4B4F25C37BC4672EF04C62483761;164.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 252.
+(rerunfilecheck)             Checksum: 911D20D57DDFA41C252078264FB1C29E;205.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
  ) 
 Here is how much of TeX's memory you used:
- 7370 strings out of 492982
- 102982 string characters out of 6134897
- 205716 words of memory out of 5000000
- 10800 multiletter control sequences out of 15000+600000
+ 7382 strings out of 492982
+ 103168 string characters out of 6134897
+ 207716 words of memory out of 5000000
+ 10809 multiletter control sequences out of 15000+600000
  11699 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,8n,28p,904b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,8n,28p,904b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
@@ -845,16 +857,17 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
-am10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
-m10.pfb>
-Output written on hw1.pdf (10 pages, 560564 bytes).
+/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+
+Output written on hw1.pdf (10 pages, 616583 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 168 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

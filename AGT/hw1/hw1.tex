@@ -48,6 +48,25 @@
  
 \section{Task 1}
 \includegraphics[width=\textwidth]{Images/Task1.png}
+\section{Task 2}
+Consider the next ratio
+$$
+\dfrac{Q_T}{R_T} = \dfrac{\sum \limits_{t=1}^T l_{s_t}^t - \min \limits_{\pi \in S_3} \sum \limits_{t=1}^T l_{\pi(s_t)}^t}{\sum \limits_{t=1}^T l_{s_t}^t - \min \limits_{i = \{1, 2, 3 \}} \sum \limits_{t=1}^T l_{i}^t}
+$$
+where $\mathbb{P}(s_t = i) = p_i^t, ~ i = \{1, 2, 3 \}.$
+
+Denote $p_*^t = \min \limits_{i = \{1, 2, 3 \}} p_i^t.$ Environment plays the next \textbf{strategy:} 
+$$
+l_{i}^t = 
+\begin{cases}
+0, & p_i^t = p_*^t, \\
+1, & p_i^t \neq p_*^t,
+\end{cases}
+$$
+where $t = \{1, \ldots, T \}, ~ i = \{1, 2, 3 \}.$
+
+Thus, $Q_T \geqslant \dfrac{T - 1}{T} \cdot T = T-1$ while $R_T = o(T) \Rightarrow \dfrac{Q_T}{R_T} \rightarrow +\infty, ~ T \rightarrow + \infty.$
+
 \section{Task 3}
 Consider two matrix
 \begin{center}
@@ -169,12 +188,16 @@ $$
 $$ which
 is the highest possible Price of Anarchy for atomic instances with affine cost functions. 
 	\item Consider the next atomic instance $(G, r, c)$ with three players. Set $r_i = 1, \forall i \in \{1, 2, 3\}.$ 
-	
+	\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Images/Task4_2_2.png}
+\caption{The all possible player's strategies.The bold (non-dashed) means the path cost is $c(x) = x,$ the dashed lines means the path cost is $c(x) = 0.$}
+\end{figure}
 The optimal strategies are for each player to move in a straight line. 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{Images/Task4_2.png}
-\caption{The optimal player's strategies.}
+\caption{The optimal player's strategies.The bold (non-dashed) means the path cost is $c(x) = x,$ the dashed lines means the path cost is $c(x) = 0.$}
 \end{figure}
 At the Nash equilibrium each player moves according to his own color. The bold (non-dashed) means the path cost is $c(x) = x,$ the dashed line means the path cost is $c(x) = 0.$
 \begin{figure}[H]
