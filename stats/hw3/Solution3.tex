@@ -212,6 +212,46 @@ Let's take a look at the plot below
 \caption{The length of the second interval is less than the length of the first interval ($l_2 < l_1$).}
 \end{figure}
 
+\subsection*{T1 (iii)}
+\addcontentsline{toc}{subsection}{T1 (iii)}
+Consider $X_1, \ldots, X_n$ --- i.i.d. with a CDF $F(x) = 1 - e^{-x / \lambda}.$ The order statistics $X_{(i)}, X_{(j)}, i < j$ satisfy the next equation
+$$
+\P \left(X_{(i)} < m = F^{-1} \left( \dfrac{1}{2} \right) < X_{(j)} \right) = \P (m < X_{(j)}) - \P (m \leqslant X_{(i)}). 
+$$
+Using a CDF of Binomial distribution
+$$
+F_{X_{(r)}}(m) = \P (X_{(r)} \leqslant m) = \sum \limits_{k=r}^n C_n^k (1 - F(m))^k (F(m))^{n-k} =$$ 
+$$
+= \sum \limits_{k=r}^n C_n^k \left( \dfrac{1}{2} \right)^k \left( \dfrac{1}{2} \right)^{n-k} 
+= 2^{-n} \sum \limits_{k=r}^n C_n^k.
+$$
+Thus,
+$$
+\P \left(X_{(i)} < m < X_{(j)} \right) = 2^{-n} \sum \limits_{k=i}^{j-1} C_n^k.
+$$
+Since 
+$$
+F(m) = 1 - e^{-m / \lambda} = \dfrac{1}{2}
+$$ 
+then 
+$$
+m = \lambda \ln 2.
+$$
+Finally, 
+\begin{tcolorbox}
+[enhanced,width=\textwidth,center upper,
+ fontupper=\large\bfseries,
+ drop fuzzy shadow southeast,
+ colframe=red!50!black,colback=yellow!25]
+$
+\P (X_{(i)} < m < X_{(j)}) = \P \left( \dfrac{X_{(i)}}{\ln 2} < \lambda < \dfrac{X_{(j)}}{\ln 2} \right) =
+$
+$
+= 2^{-n} \sum \limits_{k=i}^{j-1} C_n^k = 1 - \alpha, ~ i < j.
+$
+\end{tcolorbox}
+
+
 \subsection*{N1}
 \addcontentsline{toc}{subsection}{N1}
 \begin{figure}[H]
@@ -220,8 +260,10 @@ Let's take a look at the plot below
 \caption{The length of the second interval is less than the length of the first interval ($l_2 < l_1$).}
 \end{figure}
 
-\section{Task 2}
-\subsection{T2}
+\section*{Task 2}
+\addcontentsline{toc}{section}{Task 2}
+\subsection*{T2}
+\addcontentsline{toc}{subsection}{T2}
 Let $X_i, Y_i$ be random variables such that
 $$
 X_i = 
@@ -270,10 +312,18 @@ Finally, $n_{min}$ is a solution of the next equation
 $$
 \dfrac{z_{1 - \alpha/2}}{\sqrt{2n}} = 0.05,
 $$
-$$
+\begin{tcolorbox}
+[enhanced,width=\textwidth,center upper,
+ fontupper=\large\bfseries,
+ drop fuzzy shadow southeast,
+ colframe=red!50!black,colback=yellow!25]
+$
 n_{min} = \dfrac{1}{2} \left( \dfrac{z_{1 - \alpha/2}}{0.05} \right)^2, ~ \alpha = 0.05.
-$$
-\subsection{T3}
+$
+\end{tcolorbox}
+
+\subsection*{T3}
+\addcontentsline{toc}{subsection}{T3}
 Consider a null hypothesis $H_0: p - q = 0$ and an alternative $H_1: p - q = 0.03.$ Let's calculate the Test Statistics
 $$
 T = \dfrac{\overline{X} - \overline{Y} - (p - q)}{\sqrt{\dfrac{p(1-p)}{n} + \dfrac{q(1-q)}{n}}} = \dfrac{\overline{X} - \overline{Y} - (p - q)}{\sqrt{\dfrac{\overline{X}(1-\overline{X})}{n} + \dfrac{\overline{Y}(1-\overline{Y})}{n}}} = \sqrt{n} \dfrac{0.05 - (p-q)}{\sqrt{0.2023}}.
@@ -310,17 +360,32 @@ n > 250.65, \\
 n < 1566.61. \\
 \end{cases}
 $$
-Finally, we have 
-$$
+Finally, we get
+\begin{tcolorbox}
+[enhanced,width=\textwidth,center upper,
+ fontupper=\large\bfseries,
+ drop fuzzy shadow southeast,
+ colframe=red!50!black,colback=yellow!25]
+$
 n_{min} = 251.
-$$
+$
+\end{tcolorbox}
 
-\section{Task 3}
-\subsection{T4}
-Consider a null hypothesis $H_0: \theta = \theta_0,$ an alternative $H_1: \theta > \theta_0$ and LR (Likelihood Ratio) test
+\section*{Task 3}
+\addcontentsline{toc}{section}{Task 3}
+\subsection*{T4}
+\addcontentsline{toc}{subsection}{T4}
+Consider a null hypothesis $H_0: \theta = \theta_0,$ an alternative $H_1: \theta > \theta_0$ and
+\begin{tcolorbox}
+[enhanced,width=\textwidth,center upper,
+ fontupper=\large\bfseries,
+ drop fuzzy shadow southeast,
+ colframe=red!50!black,colback=yellow!25]
+\textbf{\small LR (Likelihood Ratio) test}
 $$
 \lambda(\vec{x}) = \dfrac{\mathcal{L}(\vec{x}, \theta_0)}{\sup \limits_{\theta \geqslant \theta_0} \mathcal{L}(\vec{x}, \theta)}.
 $$
+\end{tcolorbox}
 Let $\hat{\theta}$ be the solution for the next problems $\sup \limits_{\theta \geqslant \theta_0} \mathcal{L}(\vec{x}, \theta).$ Now the LR can be written as following
 $$
 \lambda(\vec{x}) = \left( \dfrac{\theta_0}{\hat{\theta}} \right)^n \prod \limits_{i=1}^n (1-x_i)^{\theta_0- \hat{\theta}}.
@@ -332,16 +397,25 @@ $$
 Denote $$
 \widetilde{c} = \dfrac{ \log c - n \log \left(\dfrac{\theta_0}{\hat{\theta}} \right)}{\theta_0 - \hat{\theta}}.
 $$
+\begin{center}
+\large \itshape \underline{Searching for the threshold $c$}
+\end{center}
 To find the constant $\widetilde{c}$ we are going to calculate a type 1 error
 $$ 
 \P(\text{type 1 error}) = \P (\text{reject } H_0| H_0 \text{ is true}) = \P \left( \sum \limits_{i=1}^n \log (1 - x_i) < \widetilde{c} \, | \, H_0 \text{ is true} \right).
 $$
+\begin{tcolorbox}
+[enhanced,width=\textwidth,center upper,
+ fontupper=\large\bfseries,
+ drop fuzzy shadow southeast,
+ colframe=red!50!black,colback=yellow!25]
 \begin{statement}
 Consider $X_1, \ldots, X_n \sim p(x;\theta).$ Then
 $$
 \sum \limits_{i=1}^n \log (1 - X_i) \sim \Gamma \left( n, \dfrac{1}{\theta} \right).
 $$
 \end{statement}
+\end{tcolorbox}
 \begin{proof}
 Consider exponential random variable $X \sim p(x; \theta).$ Then
 $$
@@ -370,10 +444,22 @@ $$
 \P(\text{type 1 error}) = \P \left( \sum \limits_{i=1}^n \log (1 - x_i) < \widetilde{c} \, | \, H_0 \text{ is true} \right) = F_{(n, \theta_0)}(\widetilde{c}) = \alpha,
 $$
 $$
-\widetilde{c} = F_{(n, \theta_0)}^{-1}(\alpha) = q_{(n, \theta_0)}(\alpha) \Rightarrow c = \exp \left( (\theta_0 - \hat{\theta}) \cdot q_{(n, \theta_0)}(\alpha) + n \log \left( \dfrac{\theta_0}{\hat{\theta}} \right) \right)
-$$
+\widetilde{c} = F_{(n, \theta_0)}^{-1}(\alpha) = q_{(n, \theta_0)}(\alpha)$$
+Threshold $c$ can be found the next way
+\begin{tcolorbox}
+[enhanced,width=\textwidth,center upper,
+ fontupper=\large\bfseries,
+ drop fuzzy shadow southeast,
+ colframe=red!50!black,colback=yellow!25]
+$
+c = \exp \left( (\theta_0 - \hat{\theta}) \cdot q_{(n, \theta_0)}(\alpha) + n \log \left( \dfrac{\theta_0}{\hat{\theta}} \right) \right)
+$
+\end{tcolorbox}
 where $F_{(n, \theta_0)}$ is a CDF of Gamma distribution $\Gamma \left( n, \dfrac{1}{\theta_0} \right),$ and $q_{(n, \theta_0)}(\alpha)$ is a $\alpha$ -- quantile of Gamma distribution $\Gamma \left( n, \dfrac{1}{\theta_0} \right)$ (if we consider the left tailed test).\\
 
+\begin{center}
+\large \itshape \underline{The power of test}
+\end{center}
 According to the definition of the power of statistic test
 $$
 W(\theta) = \P (\text{reject } H_0 \, | \, H_1 \text{ is true}) = 
@@ -387,11 +473,28 @@ $$
 W(\theta) = F_{(n, \theta)}(q_{(n, \theta_0)}(\alpha)) = \int \limits_{0}^{q_{(n, \theta_0)}(\alpha)} \dfrac{\theta^n t^{n-1} e^{-t \theta}}{ \Gamma(n)} dt = 
 $$
 $$
-= \left \{ z = \dfrac{\theta}{\theta_0} t \right \} = \dfrac{\theta_0}{\theta} \int \limits_{0}^{\dfrac{\theta}{\theta_0} \cdot q_{(n, \theta_0)}(\alpha)} \dfrac{\theta^n \theta_0^{n-1}}{\theta^{n-1}} \dfrac{z^{n-1} e^{-t \theta_0}}{\Gamma(n)} dt = F_{(n, \theta_0)} \left( \dfrac{\theta}{\theta_0} \cdot q_{(n, \theta_0)} \right).
+= \left \{ z = \dfrac{\theta}{\theta_0} t \right \} = \dfrac{\theta_0}{\theta} \int \limits_{0}^{\dfrac{\theta}{\theta_0} \cdot q_{(n, \theta_0)}(\alpha)} \dfrac{\theta^n \theta_0^{n-1}}{\theta^{n-1}} \dfrac{z^{n-1} e^{-t \theta_0}}{\Gamma(n)} dz = F_{(n, \theta_0)} \left( \dfrac{\theta}{\theta_0} \cdot q_{(n, \theta_0)} \right).
 $$
+\begin{tcolorbox}
+[enhanced,width=\textwidth,center upper,
+ fontupper=\large\bfseries,
+ drop fuzzy shadow southeast,
+ colframe=red!50!black,colback=yellow!25]
+$
+W(\theta) = F_{(n, \theta_0)} \left( \dfrac{\theta}{\theta_0} \cdot q_{(n, \theta_0)} \right).
+$
+\end{tcolorbox}
 
-\subsection{T5}
-Note that $\bar{X} \sim \mathcal{N} \left( \mu, \dfrac{\sigma^2}{n} \right).$
+\subsection*{T5}
+\addcontentsline{toc}{subsection}{T5}
+Note that 
+\begin{tcolorbox}
+[enhanced,width=\textwidth,center upper,
+ fontupper=\large\bfseries,
+ drop fuzzy shadow southeast,
+ colframe=red!50!black,colback=yellow!25]
+$\bar{X} \sim \mathcal{N} \left( \mu, \dfrac{\sigma^2}{n} \right).$
+\end{tcolorbox}
 Let 
 $$
 E_1(c) = \P(\bar{X} > c | \mu = \mu_0) = 1- \P(\bar{X} \leqslant c | \mu = \mu_0) = 1- \int \limits_{-\infty}^{c} \dfrac{\sqrt{n}}{\sqrt{2 \pi \sigma^2}} e^{-\dfrac{n (x-\mu_0)^2}{2 \sigma^2}} dx
@@ -408,76 +511,102 @@ $$
 $$
  \dfrac{\sqrt{n}}{\sqrt{2 \pi \sigma^2}} e^{-\dfrac{n (c-\mu_1)^2}{2 \sigma^2}} =  \dfrac{\sqrt{n}}{\sqrt{2 \pi \sigma^2}} e^{-\dfrac{n (c-\mu_0)^2}{2 \sigma^2}},
 $$
-$$
+\begin{tcolorbox}
+[enhanced,width=\textwidth,center upper,
+ fontupper=\large\bfseries,
+ drop fuzzy shadow southeast,
+ colframe=red!50!black,colback=yellow!25]
+$
 c = \dfrac{\mu_1 + \mu_0}{2}.
-$$
-\section{Task 4}
-\subsection{T6*}
-\subsubsection{(I)}
+$
+\end{tcolorbox}
+
+\section*{Task 4}
+\addcontentsline{toc}{section}{Task 4}
+\subsection*{T6* (i)}
+\addcontentsline{toc}{subsection}{T6* (i)}
 Let's denote
-$$
+\begin{tcolorbox}
+[enhanced,width=\textwidth,center upper,
+ fontupper=\large\bfseries,
+ drop fuzzy shadow southeast,
+ colframe=red!50!black,colback=yellow!25]
+$
 \hat{\theta} = \argmax \limits_{\theta \geqslant \theta_0} \mathcal{L}(\vec{x}, \theta) = \argmax \limits_{\theta \geqslant \theta_0} \prod \limits_{i=1}^n p(x_i, \theta).
-$$
-\begin{definition}
-The Kullback-Leibler divergence between the  distribution $p_0(x) = p(x, \theta_0)$ of null hypothesis $H_0,$ and the distribution $p(x) = p(x, \theta)$ of the alternative $H_1$ is the expected value of the log-likelihood ratio in favor of the null hypothesis. Then
-$$
-KL(p_0 || p) = \mathbb{E}_{p_0} \left[ \log \dfrac{p(x, \theta_0)}{p(x, \theta)} \right] = \int \limits_{-\infty}^{+\infty} p(x, \theta_0) \log \dfrac{p(x, \theta_0)}{p(x, \theta)} dx.
-$$
-\end{definition}
-\noindent Let 
+$
+\end{tcolorbox}
+Then 
 \begin{equation}
 \label{lab1}
-\Lambda(\vec{x}) = \dfrac{\mathcal{L}(\vec{x}, \theta_0)}{\mathcal{L}(\vec{x}, \hat{\theta})}
+\Lambda(\vec{x}) = \dfrac{\mathcal{L}(\vec{x}, \hat{\theta})}{\mathcal{L}(\vec{x}, \theta_0)} \geqslant 0
 \end{equation}
 be a likelihood ratio.
 Consider the log-likelihood ratio, normalized dividing by $n:$
 $$
-\Lambda_n(\vec{x}) = \dfrac{1}{n} \log \dfrac{\mathcal{L}(\vec{x}, \theta_0)}{\mathcal{L}(\vec{x}, \hat{\theta})} = \dfrac{1}{n} \sum \limits_{i=1}^n \log \dfrac{p(x_i, \theta_0)}{p(x_i, \hat{\theta})}.
+\Lambda_n(\vec{x}) = \dfrac{1}{n} \log \dfrac{\mathcal{L}(\vec{x}, \hat{\theta})}{\mathcal{L}(\vec{x}, \theta_0)} = \dfrac{1}{n} \sum \limits_{i=1}^n \log \dfrac{p(x_i, \hat{\theta})}{p(x_i, \theta_0)}.
 $$
-Note $X_1, \ldots, X_n$ are i.i.d. and $L_i = \log \dfrac{p(x_i, \theta_0)}{p(x_i, \hat{\theta})}$ is a random variable. In addition, we know from the strong Law of Large Numbers that
+Note $X_1, \ldots, X_n$ are i.i.d. and $L_i = \log \dfrac{p(x_i, \hat{\theta})}{p(x_i, \theta_0)}$ is a random variable. In addition, we know from the strong Law of Large Numbers that
 $$
-\dfrac{1}{n} \sum \limits_{i=1}^n \log \dfrac{p(x_i, \theta_0)}{p(x_i, \hat{\theta})} \rightarrow \E [L_1], ~ n \rightarrow +\infty.
+\dfrac{1}{n} \sum \limits_{i=1}^n \log \dfrac{p(x_i, \hat{\theta})}{p(x_i, \theta_0)} \rightarrow \E [L_1], ~ n \rightarrow +\infty.
 $$ 
 By definition of expected value
 $$ 
-\E [L_1] = \int \limits_{-\infty}^{+\infty} q(x) \log \dfrac{p(x, \theta_0)}{p(x, \hat{\theta})} dx
+\E [L_1] = \int \limits_{-\infty}^{+\infty} q(x) \log \dfrac{p(x, \hat{\theta})}{p(x, \theta_0)} dx \geqslant 0
 $$
 where we can put $q(x) = p(x, \theta_0)$ and then
-$$
-\E [L_1] = \int \limits_{-\infty}^{+\infty} p(x, \theta_0) \log \dfrac{p(x, \theta_0)}{p(x, \hat{\theta})} dx = KL(p_0 || \hat{p}).
-$$
-Since $KL(p_0 || \hat{p}) \geqslant 0 ~ (KL(p_0 || \hat{p}) = 0 \Leftrightarrow p_0 = \hat{p})$ we have two cases.
-\begin{itemize}
-	\item \textbf{Case 1.} If $\hat{\theta} > \theta_0$ then $\E [L_1] > 0.$
-	\item \textbf{Case 2.} If $\hat{\theta} = \theta_0 \Rightarrow \E [L_1] = 0.$
-\end{itemize}
+\begin{tcolorbox}
+[enhanced,width=\textwidth,center upper,
+ fontupper=\large\bfseries,
+ drop fuzzy shadow southeast,
+ colframe=red!50!black,colback=yellow!25]
+$
+\E [L_1] = \int \limits_{-\infty}^{+\infty} p(x, \theta_0) \log \dfrac{p(x, \hat{\theta})}{p(x, \theta_0)} dx = K(\theta_0, \hat{\theta}).
+$
+\end{tcolorbox}
 Finally, 
-$$
+\begin{tcolorbox}
+[enhanced,width=\textwidth,center upper,
+ fontupper=\large\bfseries,
+ drop fuzzy shadow southeast,
+ colframe=red!50!black,colback=yellow!25]
+$
 \log \Lambda(\vec{x}) = n \E [L_1] = 
-n KL(p_0 || \hat{p}) \geqslant 0, ~ \hat{\theta} \geqslant \theta_0.
-$$
-\subsubsection{(ii)}
+\begin{cases}
+n K(\theta_0, \hat{\theta}) & \hat{\theta} > \theta_0 \\
+0, & \hat{\theta} = \theta_0.
+\end{cases}
+$
+\end{tcolorbox}
+\subsection*{T6* (ii)}
+\addcontentsline{toc}{subsection}{T6* (ii)}
 Using \eqref{lab1} we can rewrite LR test as following
 $$
-\mathcal{L}(\vec{x}, \theta_0) \geqslant c_{\alpha} \mathcal{L}(\vec{x}, \hat{\theta}),
+\mathcal{L}(\vec{x}, \hat{\theta}) \geqslant c_{\alpha} \mathcal{L}(\vec{x}, \theta_0),
 $$
 $$
-\prod \limits_{i=1}^n e^{x_i \theta_0 - d(\theta_0)} \geqslant c_{\alpha} \prod \limits_{i=1}^n e^{x_i \hat{\theta} - d(\hat{\theta})},
+\prod \limits_{i=1}^n e^{x_i \hat{\theta} - d(\hat{\theta})} \geqslant c_{\alpha} \prod \limits_{i=1}^n e^{x_i \theta_0 - d(\theta_0)},
 $$
 $$
-\sum \limits_{i=1}^n (x_i \theta_0 - d(\theta_0)) \geqslant \log c_{\alpha} + \sum \limits_{i=1}^n (x_i \hat{\theta} - d(\hat{\theta})),
+\sum \limits_{i=1}^n (x_i \hat{\theta} - d(\hat{\theta})) \geqslant \log c_{\alpha} + \sum \limits_{i=1}^n (x_i \theta_0 - d(\theta_0)),
 $$
 $$
-\theta_0 \geqslant \hat{\theta} + \dfrac{\log c_{\alpha} + n d(\theta_0) - n d(\hat{\theta})}{\sum \limits_{i=1}^n x_i}.
+\hat{\theta} \geqslant \theta_0 + \dfrac{\log c_{\alpha} + n d(\hat{\theta}) - n d(\theta_0)}{\sum \limits_{i=1}^n x_i}.
 $$
-If we denote $\widetilde{c}_{\alpha} = \dfrac{\log c_{\alpha} + n d(\theta_0) - n d(\hat{\theta})}{\sum \limits_{i=1}^n x_i}$ then
-$$
-\theta_0 \geqslant \hat{\theta} + \widetilde{c}_{\alpha}.
-$$
+If we denote $\widetilde{c}_{\alpha} = \dfrac{\log c_{\alpha} + n d(\hat{\theta}) - n d(\theta_0)}{\sum \limits_{i=1}^n x_i}$ then
+\begin{tcolorbox}
+[enhanced,width=\textwidth,center upper,
+ fontupper=\large\bfseries,
+ drop fuzzy shadow southeast,
+ colframe=red!50!black,colback=yellow!25]
+$
+\hat{\theta} \geqslant \theta_0 + \widetilde{c}_{\alpha}.
+$
+\end{tcolorbox}
 
 \section*{Appendix}
 \addcontentsline{toc}{section}{Appendix}
-\subsection*{N1}
-\addcontentsline{toc}{section}{N1}
-\href{hw3.html}{asdf}
+\begin{itemize}
+	\item Source code can be found \href{https://github.com/vitomania/ozon/blob/master/stats/hw3/hw3.ipynb}{here}.
+\end{itemize}
+
 \end{document} 

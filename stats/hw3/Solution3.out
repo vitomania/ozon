@@ -1,16 +1,15 @@
 \BOOKMARK [1][-]{Doc-Start}{Task 1}{}% 1
 \BOOKMARK [2][-]{section*.1}{T1 \(i\)}{Doc-Start}% 2
 \BOOKMARK [2][-]{Item.2}{T1 \(ii\)}{Doc-Start}% 3
-\BOOKMARK [2][-]{figure.caption.2}{N1}{Doc-Start}% 4
-\BOOKMARK [1][-]{section.1}{Task 2}{}% 5
-\BOOKMARK [2][-]{subsection.1.1}{T2}{section.1}% 6
-\BOOKMARK [2][-]{subsection.1.2}{T3}{section.1}% 7
-\BOOKMARK [1][-]{section.2}{Task 3}{}% 8
-\BOOKMARK [2][-]{subsection.2.1}{T4}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.2}{T5}{section.2}% 10
-\BOOKMARK [1][-]{section.3}{Task 4}{}% 11
-\BOOKMARK [2][-]{subsection.3.1}{T6*}{section.3}% 12
-\BOOKMARK [3][-]{subsubsection.3.1.1}{\(I\)}{subsection.3.1}% 13
-\BOOKMARK [3][-]{subsubsection.3.1.2}{\(ii\)}{subsection.3.1}% 14
-\BOOKMARK [1][-]{subsubsection.3.1.2}{Appendix}{}% 15
-\BOOKMARK [1][-]{subsubsection.3.1.2}{N1}{}% 16
+\BOOKMARK [2][-]{figure.caption.2}{T1 \(iii\)}{Doc-Start}% 4
+\BOOKMARK [2][-]{figure.caption.2}{N1}{Doc-Start}% 5
+\BOOKMARK [1][-]{figure.caption.3}{Task 2}{}% 6
+\BOOKMARK [2][-]{section*.4}{T2}{figure.caption.3}% 7
+\BOOKMARK [2][-]{section*.4}{T3}{figure.caption.3}% 8
+\BOOKMARK [1][-]{section*.4}{Task 3}{}% 9
+\BOOKMARK [2][-]{section*.5}{T4}{section*.4}% 10
+\BOOKMARK [2][-]{statement.2}{T5}{section*.4}% 11
+\BOOKMARK [1][-]{statement.2}{Task 4}{}% 12
+\BOOKMARK [2][-]{section*.6}{T6* \(i\)}{statement.2}% 13
+\BOOKMARK [2][-]{equation.0.1}{T6* \(ii\)}{statement.2}% 14
+\BOOKMARK [1][-]{equation.0.1}{Appendix}{}% 15
